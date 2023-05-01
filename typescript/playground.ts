@@ -21,7 +21,7 @@ const executeSelectedSnippet = async (snippetName: string) => {
   await new Promise((resolve, reject) => {
     exec(`ts-node-esm ./snippets/${snippetName}`, (err, stdout, stderr) => {
       if (err) {
-        console.error('script error', err);
+        console.error("script error", err);
         reject(err);
       } else {
         console.log(stdout);
@@ -44,7 +44,6 @@ const start = async () => {
     return;
   }
 
-  
   await executeSelectedSnippet(snippets[option]);
 };
 
