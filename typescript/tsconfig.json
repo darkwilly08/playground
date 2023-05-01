@@ -1,0 +1,13 @@
+{
+    "ts-node": {
+      "esm": true,
+      "experimentalSpecifierResolution": "node"
+    },
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "module": "es6",
+      "target": "es5", 
+    }
+
+  }
